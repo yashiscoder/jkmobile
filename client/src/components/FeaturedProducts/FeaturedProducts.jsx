@@ -13,16 +13,12 @@ const FeaturedProducts = ({ type }) => {
       <div className="top">
         <h1>{type} products</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-          lacus vel facilisis labore et dolore magna aliqua. Quis ipsum
-          suspendisse ultrices gravida. Risus commodo viverra maecenas.
+        Introducing our featured product, the JK Mobile! Our website is the ultimate solution for anyone looking to streamline their mobile experience and get the most out of their device. With a range of powerful features and an intuitive interface, the JK Mobile is designed to make your life easier and more productive.
         </p>
       </div>
       <div className="bottom">
         {error
-          ? "Something went wrong!"
+          ? "Some  wrong!"
           : loading
           ? "loading"
           : data?.map((item) => <Card item={item} key={item.id} />)}
